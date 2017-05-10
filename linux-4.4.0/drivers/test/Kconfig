@@ -1,0 +1,14 @@
+#
+#Test driver configuration
+#
+menu "Test Driver"
+comment "Test Driver"
+
+config CONFiG_TEST
+    bool "Test Support"
+
+config CONFiG_TEST_USER
+    tristate "Test user-space interface"
+    depends on CONFiG_TEST
+
+endmenu
